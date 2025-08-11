@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: ".env"
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:17
+    restart: always
+    env_file: ".env"
+    volumes:
+      - db_data_weatherbot:/var/lib/postgresql
+volumes:
+  db_data_weatherbot:

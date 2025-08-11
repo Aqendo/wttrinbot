@@ -1,18 +1,24 @@
-[tool.poetry]
+[project]
 name = "wttrinbot"
-version = "0.1.0"
-description = ""
-authors = ["Aqendo <aqendomail@gmail.com>"]
+version = "0.0.0a"
+description = "An inline Telegram bot to see the current weather"
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.12.15",
+    "asyncpg>=0.30.0",
+    "certifi>=2025.8.3",
+    "geopy>=2.4.1",
+    "python-dotenv>=1.0.1",
+    "python-telegram-bot>=21.6",
+    "sqlalchemy>=2.0.42",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-fastapi = "^0.101.1"
-geopy = "^2.3.0"
-aiohttp = "^3.8.5"
-uvicorn = "^0.23.2"
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "isort>=6.0.1",
+]
 
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.isort]
+profile = "black"

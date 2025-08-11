@@ -1,4 +1,4 @@
-translations = {
+translation = {
     "clearsky_day": "Ясное небо (день)",
     "clearsky_night": "Ясное небо (ночь)",
     "clearsky_polartwilight": "Ясное небо (полярные сумерки)",
@@ -81,5 +81,5 @@ translations = {
     "snowshowers_polartwilight": "Ливни снега (полярные сумерки)",
     "snowshowersandthunder_day": "Ливни снега и гроза (день)",
     "snowshowersandthunder_night": "Ливни снега и гроза (ночь)",
-    "snowshowersandthunder_polartwilight": "Ливни снега и гроза (полярные сумерки)"
+    "snowshowersandthunder_polartwilight": "Ливни снега и гроза (полярные сумерки)",
 }
