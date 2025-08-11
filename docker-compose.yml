@@ -10,6 +10,6 @@ services:
     restart: always
     env_file: ".env"
     volumes:
-      - db_data_weatherbot:/var/lib/postgresql
+      - db_data_weatherbot:/var/lib/postgresql/data
 volumes:
   db_data_weatherbot:
